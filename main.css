@@ -53,7 +53,6 @@ main {
   color: #555;
 }
 
-/* Nav (HTML semántico con ul/li) */
 .top-bar__nav ul {
   list-style: none;
   margin: 0;
@@ -86,13 +85,11 @@ main {
   outline-offset: 2px;
 }
 
-/* Sections */
 section {
   scroll-margin-top: 120px;
   margin-bottom: 40px;
 }
 
-/* Headings */
 h2 {
   margin: 0 0 16px;
   border-bottom: 1px solid #c89b88;
@@ -108,8 +105,6 @@ h3 {
   font-weight: 600;
 }
 
-
-/* Text */
 p {
   margin: 4px 0 12px;
 }
@@ -123,7 +118,6 @@ li {
   margin-bottom: 6px;
 }
 
-/* Contact */
 address {
   font-style: normal;
   display: flex;
@@ -145,7 +139,6 @@ address a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
 footer {
   max-width: 900px;
   margin: 0 auto;
@@ -154,7 +147,6 @@ footer {
   color: #666;
 }
 
-/* Utility */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -167,7 +159,6 @@ footer {
   border: 0;
 }
 
-/* Responsive */
 @media (max-width: 700px) {
   .top-bar {
     flex-direction: column;
@@ -203,7 +194,6 @@ footer {
   }
 }
 
-/* ===== Cards para Projects / Education / Experience ===== */
 section > article {
   background-color: #faf9f6;
   border: 1px solid #e6dfd1;
@@ -216,7 +206,6 @@ section > article + article {
   margin-top: 16px;
 }
 
-/* Que los textos dentro de article respiren bonito */
 section > article p {
   margin: 6px 0 10px;
 }
@@ -225,7 +214,6 @@ section > article ul {
   margin-top: 8px;
 }
 
-/* ===== Link de Projects como botón simple (no azul default) ===== */
 #projects a {
   display: inline-block;
   padding: 6px 10px;
