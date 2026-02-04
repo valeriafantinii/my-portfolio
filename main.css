@@ -1,0 +1,182 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f8f6f1;
+  color: #303030;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+
+.top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  background-color: #d6d2c4;
+  border-bottom: 1px solid #c2bdad;
+
+  padding: 12px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
+.top-bar__brand {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  white-space: nowrap;
+}
+
+.top-bar__name {
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 0.2px;
+}
+
+.top-bar__role {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.top-bar__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.top-bar__nav a {
+  text-decoration: none;
+  color: #303030;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.top-bar__nav a:hover {
+  background-color: #c2bdad;
+}
+
+.top-bar__nav a:focus-visible {
+  outline: 2px solid #999;
+  outline-offset: 2px;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin: 0 0 16px;
+  border-bottom: 1px solid #ab6a51;
+  padding-bottom: 4px;
+  color: #ab6a51;
+}
+
+
+h3 {
+  margin: 0 0 4px;
+}
+
+p {
+  margin: 4px 0 12px;
+}
+
+ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+
+address {
+  font-style: normal;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+address a {
+  color: #333;
+  text-decoration: none;
+}
+
+address a:hover {
+  text-decoration: underline;
+}
+
+
+footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 700px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-bar__brand {
+    white-space: normal;
+  }
+
+  .top-bar__nav {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .top-bar {
+    padding: 10px 16px;
+  }
+
+  main {
+    padding: 16px;
+  }
+
+  .top-bar__name {
+    font-size: 1.05rem;
+  }
+}
